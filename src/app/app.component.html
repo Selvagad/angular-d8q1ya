@@ -1,0 +1,9 @@
+<hello name="{{ name }}"></hello>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div>
+    <label>Email address</label>
+    <input type="email" formControlName="email">
+  </div>
+  <app-file-upload formControlName="image" [progress]="progress"></app-file-upload>
+  <button>Submit</button>
+</form>
